@@ -76,7 +76,7 @@ exports.handle = (client) => {
       let weatherData = {
         temperature: 60,
         condition: 'sunny',
-        city: client.getConversationState.weatherCity.value,
+        city: client.getConversationState().weatherCity.value,
       }
       //Need to provide weather
       client.addResponse('app:response:name:provide_weather/current', weatherData)
