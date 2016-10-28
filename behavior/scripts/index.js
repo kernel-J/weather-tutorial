@@ -73,7 +73,13 @@ exports.handle = (client) => {
     },
 
     prompt() {
+      let weatherData = {
+        temperature: 60,
+        condition: 'sunny',
+        city: client.getConversationState.weatherCity.value,
+      }
       //Need to provide weather
+      client.addResponse('app:response:name:provide_weather/current', weatherData)
       client.done()
     }
   })
