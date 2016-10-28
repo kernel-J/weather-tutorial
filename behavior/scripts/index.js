@@ -58,7 +58,7 @@ exports.handle = (client) => {
 
         console.log('User wants the weather in:', city.value)
       }
-    }
+    },
 
     prompt() {
       //Need to prompt user for city
